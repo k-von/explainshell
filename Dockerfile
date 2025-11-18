@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM openshift/python:2.7
 
 RUN apt-get update \
   && apt-get install man-db -y \
