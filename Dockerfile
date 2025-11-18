@@ -1,8 +1,8 @@
 FROM openshift/python:2.7
 
-RUN apt-get update \
-  && apt-get install man-db -y \
-  && apt-get clean
+RUN yum update \
+  && yum install man-db -y \
+  && yum clean
 
 ADD ./requirements.txt /tmp/requirements.txt
 
